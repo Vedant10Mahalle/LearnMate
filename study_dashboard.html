@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Dashboard</title>
+  <link rel="stylesheet" href="study_dashboard.css">
+  <link rel="stylesheet" href="progress.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h2>Study Timer</h2>
+    <div id="time">59:00</div>
+    <button id="startBtn">Start</button>
+    <button id="resetBtn">Reset</button>
+
+    <h2>Music Player</h2>
+    <audio controls id="musicPlayer">
+      <source src="music.mp3" type="audio/mp3">
+    </audio>
+  </div>
+  <div class="container text-center mt-5">
+    <h2>Your Focus Progress</h2>
+    <div class="progress-container">
+        <svg class="progress-ring" width="200" height="200">
+            <circle class="progress-ring__circle" stroke="#e6e6e6" stroke-width="10" fill="transparent" r="90" cx="100" cy="100"/>
+            <circle id="progress-ring" class="progress-ring__circle progress-ring__circle--progress" stroke="#28a745" stroke-width="10" fill="transparent" r="90" cx="100" cy="100"/>
+        </svg>
+        <div class="progress-text" id="progress-text">0%</div>
+    </div>
+    <button class="btn btn-success mt-4" id="start-btn">Start Study Session</button>
+</div>
+
+  <script src="study_dashboard.js"></script>
+  <script src="progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Black background for a sleek look */
+    color: #D3D3D3; /* Light gray for primary text */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Center the floating message */
+.floating-message {
+    position: absolute; /* Positioned absolutely for centering */
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%); /* Center the element */
+    background-color: rgba(253, 253, 253, 0.9); /* Slightly transparent white */
+    padding: 20px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); Soft shadow for depth */
+    /* border-radius: 10px; Rounded corners */
+    text-align: center; /* Center text */
+    max-width: 80%; /* Maximum width */
+}
+
+/* Heading Styles */
+.floating-message h2 {
+    color: #00BFFF; /* Cyan color for headings */
+    margin: 0; /* Remove default margin */
+}
+
+/* Paragraph Styles */
+.floating-message p {
+    color: #c59a9a; /* Dark gray for secondary text */
+    margin: 0 0 10 10; /* Add margin only to the top */
+}
+
+/* Footer Styles */
+footer {
+    position: absolute; /* Positioned at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+    background-color: #bf2d2d; /* Dark gray background for footer */
+    color: #ffffff; /* Light gray text for contrast */
+    text-align: center; /* Center footer text */
+    padding: 10px 0; /* Padding for spacing */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .floating-message {
+        width: 90%; /* Wider on smaller screens */
+    }
+
+    footer {
+        font-size: 14px; /* Smaller footer text on mobile */
+    }
+}
+.header-bg {
+    background-color: #000000; /* Green color */
+}

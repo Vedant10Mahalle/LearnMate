@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Call and Chat</title>
+  <link rel="stylesheet" href="video_chat.css">
+</head>
+<body>
+  <div class="video-container">
+    <iframe id="videoFrame" allow="camera; microphone; fullscreen; display-capture" src="" frameborder="0"></iframe>
+  </div>
+
+  <div class="chat-container">
+    <div id="chatBox" class="chat-box"></div>
+    <input type="text" id="chatInput" placeholder="Type a message" />
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <script src="video_chat.js"></script>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6715056b2480f5b4f5907ef4/1ial1qc53';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>

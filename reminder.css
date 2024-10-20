@@ -1,0 +1,74 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark Background */
+    color: #E0E0E0; /* Light Text */
+    padding: 20px;
+}
+
+/* Heading Styling */
+h2 {
+    color: #00BFFF; /* Deep Sky Blue for headings */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.reminder-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    background-color: #1E1E1E; /* Dark Gray for input fields */
+    color: #E0E0E0; /* Light Text */
+    border: 1px solid #007bff; /* Button Blue for borders */
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.form-group input:focus {
+    border-color: #00BFFF; /* Focus border color */
+}
+
+/* Active Reminders List */
+#reminderList {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C2C2C; /* Darker Gray for list items */
+    border: 1px solid #007bff; /* Button Blue for borders */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.list-group-item:hover {
+    background-color: #343434; /* Slightly lighter on hover */
+}
+
+.reminder-time {
+    font-weight: bold;
+    color: #28A745; /* Green for reminder time */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reminder-form {
+        flex-direction: column;
+    }
+
+    .form-group input {
+        margin-bottom: 10px;
+    }
+}
